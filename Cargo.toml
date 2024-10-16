@@ -1,0 +1,15 @@
+[package]
+name = "rama"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+debug = 2
+
+[dependencies]
+anyhow = "1.0.89"
+memmap2 = "0.9.5"
+bytemuck = { version = "1.18.0", features = ["derive"] }
+log = "0.4.22"
+
+cblas = { version = "0.4.0", features = [] }
